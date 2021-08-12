@@ -5,14 +5,14 @@
 <mapper namespace="com.chen.dao.BookMapper">
     <insert id="addBook" parameterType="Books">
         insert into practice.books(bookName, bookCounts, detail)
-        values (#{bookName},#{bookCount},#{detail});
+        values (#{bookName},#{bookCounts},#{detail});
     </insert>
 
     <delete id="deleteBook" parameterType="int">
         delete from practice.books where bookID=#{bookID};
     </delete>
 
-    <update id="updateBook" parameterType="int">
+    <update id="updateBook" parameterType="Books">
         update practice.books set bookName=#{bookName},
                                   bookCounts=#{bookCounts},
                                   detail=#{detail}
