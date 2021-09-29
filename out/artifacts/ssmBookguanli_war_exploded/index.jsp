@@ -30,7 +30,10 @@
 <body>
 
 <h3>
-  <a href="${pageContext.request.contextPath}/book/allBook">点击进入列表页</a>
+  <a href="${pageContext.request.contextPath}/book/allBook">点击查看所有图书</a>
+</h3>
+<h3>
+  <a href="${pageContext.request.contextPath}/gologin">点击登陆</a>
 </h3>
 </body>
 </html>

@@ -1,4 +1,4 @@
-
+<%@ page import="org.springframework.ui.Model" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -8,7 +8,8 @@
 <body>
 <center>
     <h1 style="color:red">登录</h1>
-    <form id="indexform" name="indexForm" action="logincheck.jsp" method="post">
+    <p>${msg}</p>
+    <form action="${pageContext.request.contextPath}/login" method="post">
         <table border="0">
             <tr>
                 <td>账号：</td>
@@ -23,6 +24,7 @@
         <br>
         <input type="submit" value="登录" style="color:#BC8F8F">
     </form>
+
     <form action="zhuce.jsp">
         <input type="submit" value="注册" style="color:#BC8F8F">
     </form>

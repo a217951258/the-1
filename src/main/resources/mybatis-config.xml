@@ -10,4 +10,5 @@
     <mappers>
         <mapper class="com.chen.dao.BookMapper"/>
     </mappers>
+
 </configuration>
